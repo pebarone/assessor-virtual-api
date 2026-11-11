@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💹 Virtual Investment Advisor
+# Virtual Investment Advisor
 
 **Full-stack robo-advisor: investor-profile suitability, Strategy-based recommended portfolios and a buy/sell marketplace on Oracle.**
 
@@ -14,7 +14,7 @@
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-**[🌐 Live demo](https://assessor-virtual-api.onrender.com)** · **[📖 API docs](https://assessor-virtual-api.onrender.com/api-docs)**
+**[Live demo](https://assessor-virtual-api.onrender.com)** · **[API docs](https://assessor-virtual-api.onrender.com/api-docs)**
 
 <img width="85%" alt="Virtual Investment Advisor dashboard" src="https://github.com/user-attachments/assets/958f11fe-bf72-42ef-b471-0525b9e5cdc2" />
 
@@ -22,27 +22,27 @@
 
 ---
 
-## ✨ Overview
+## Overview
 
 A simulated investment platform made of a **RESTful Node.js/Express API** backed by **Oracle Database** and a **vanilla JavaScript SPA**. Users sign up, verify their e-mail, answer a suitability questionnaire to get an investor profile (Conservative, Moderate or Aggressive), deposit funds, browse a marketplace of assets and build their own portfolio, or let the app invest everything in a recommended portfolio with one click.
 
 > The free Render instance may take a few seconds to wake up on the first request.
 
-## 🚀 Features
+## Features
 
-- 👤 **Accounts & security:** registration and login with bcrypt-hashed passwords, e-mail verification, forgot/reset password
-- 🔐 **JWT access + refresh tokens**; verification, reset and refresh tokens are stored as **SHA-256 hashes** and compared in a timing-safe way, with a cron job that cleans expired tokens
-- 🛂 **Role-based access** (`cliente` / `admin`) and owner-or-admin checks on portfolio routes
-- 🧭 **Suitability questionnaire** that assigns the investor profile
-- 🤖 **Recommended portfolio** per profile using the **Strategy pattern**, plus **one-click investing** of the whole balance
-- 🛒 **Marketplace & portfolio:** deposit, buy by amount (the system computes fractional shares), sell by quantity
-- 📊 **Dashboard** with live balance and a Chart.js allocation pie chart, light/dark theme
-- 🧱 **Hardening:** `helmet` headers and `express-rate-limit` on the API and auth routes
-- ✉️ **Transactional e-mails** through the Gmail API (Google OAuth2)
-- 📖 **OpenAPI 3.0** spec with Swagger UI
-- 🧪 **Jest + Supertest** integration and service tests
+- **Accounts & security:** registration and login with bcrypt-hashed passwords, e-mail verification, forgot/reset password
+- **JWT access + refresh tokens**; verification, reset and refresh tokens are stored as **SHA-256 hashes** and compared in a timing-safe way, with a cron job that cleans expired tokens
+- **Role-based access** (`cliente` / `admin`) and owner-or-admin checks on portfolio routes
+- **Suitability questionnaire** that assigns the investor profile
+- **Recommended portfolio** per profile using the **Strategy pattern**, plus **one-click investing** of the whole balance
+- **Marketplace & portfolio:** deposit, buy by amount (the system computes fractional shares), sell by quantity
+- **Dashboard** with live balance and a Chart.js allocation pie chart, light/dark theme
+- **Hardening:** `helmet` headers and `express-rate-limit` on the API and auth routes
+- **Transactional e-mails** through the Gmail API (Google OAuth2)
+- **OpenAPI 3.0** spec with Swagger UI
+- **Jest + Supertest** integration and service tests
 
-## 🧱 Tech Stack
+## Tech Stack
 
 | Layer | Technologies |
 | --- | --- |
@@ -53,7 +53,7 @@ A simulated investment platform made of a **RESTful Node.js/Express API** backed
 | Docs & tests | swagger-ui-express, yamljs, Jest, Supertest |
 | Database | Oracle Database |
 
-## 🏛️ Architecture
+## Architecture
 
 Layered architecture applying SOLID principles:
 
@@ -70,7 +70,7 @@ routes (src/api) ──▶ controllers ──▶ services ──▶ repositories
 - **Middleware pattern** for authentication, authorization and rate limiting
 
 <details>
-<summary><b>📡 Main endpoints</b> (prefix <code>/api</code>)</summary>
+<summary><b>Main endpoints</b> (prefix <code>/api</code>)</summary>
 
 | Area | Endpoints |
 | --- | --- |
@@ -82,7 +82,7 @@ routes (src/api) ──▶ controllers ──▶ services ──▶ repositories
 
 </details>
 
-## ⚙️ Getting Started
+## Getting Started
 
 **Requirements:** Node.js 18+ and access to an Oracle Database.
 
@@ -129,11 +129,11 @@ docker pull docker.io/pbrnx/assessor-virtual-api:latest
 docker run -p 3000:3000 --env-file .env pbrnx/assessor-virtual-api:latest
 ```
 
-## 🗺️ Class Diagram
+## Class Diagram
 
 <img src="diagrama-classes.png" alt="Class diagram" width="85%">
 
-## 🎓 Academic Context
+## Academic Context
 
 Built as an academic project for the Software Engineering program at **[FIAP](https://www.fiap.com.br/)**.
 
